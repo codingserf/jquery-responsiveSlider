@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Responsive Slider</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/jquery-responsiveSlider.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="lib/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="src/jquery.responsiveSlider.js"></script>
+<script type="text/javascript">
+  //响应式slider
+  $(function(){
+    $('.responsiveSlider').responsiveSlider({
+      slider_item_width: 250, //每个item的宽，在css中定义
+      slider_btn_disableClass: 'slider-nav-arrow_disable',
+      $slider_btn_prev: $('.slider-arrow_left'),
+      $slider_btn_next: $('.slider-arrow_right')
+    });
+  });
+</script>
+</head>
+<body>
+  <div class="your-slider-wrap"> 
+    <a class="slider-nav-arrow slider-arrow_left slider-nav-arrow_disable" href="javascript:void(0)"></a>
+    <a class="slider-nav-arrow slider-arrow_right" href="javascript:void(0)"></a>
+      <div class="your-slider responsiveSlider">
+        <ul>
+          <li class="your-item"> <img src="images/ourapproach_1.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">BRAND CONSULTANCY</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_2.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">CONSUMER PR</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_3.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">EXPERIENTIAL & EVENTS</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_4.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">DIGITAL MARKETING</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_5.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">BRAND CONSULTANCY</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_6.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">CONSUMER PR</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_7.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">EXPERIENTIAL & EVENTS</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_8.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">DIGITAL MARKETING</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_9.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">BRAND CONSULTANCY</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_10.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">CONSUMER PR</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_11.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">EXPERIENTIAL & EVENTS</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_12.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">DIGITAL MARKETING</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_13.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">BRAND CONSULTANCY</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_14.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">CONSUMER PR</div>
+          </li>
+          <li class="your-item"> <img src="images/ourapproach_15.jpg" alt="" class="your-item-pic">
+            <div class="your-item-title">EXPERIENTIAL & EVENTS</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+</body>
+</html>

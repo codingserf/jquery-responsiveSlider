@@ -1,0 +1,106 @@
+/* responsive slider */
+.responsiveSlider{
+	margin: 20px auto 0;
+	overflow: hidden;
+}
+.responsiveSlider ul{
+	width: 0; /* I don't know why, but this rule can trigger animation */
+	-webkit-transition: all .25s ease-in-out;
+	-moz-transition: all .25s ease-in-out;
+	-ms-transition: all .25s ease-in-out;
+	-o-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+.responsiveSlider li{
+	display: block;
+	float: left;
+}
+
+.slider-nav-arrow{
+	position: absolute;
+
+	display: block;
+	width: 80px;
+	height: 100%;
+
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.slider-nav-arrow_disable{
+	opacity: 0.3;
+	cursor: default;
+}
+/* /responsive slider */
+
+.your-slider-wrap{
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+.your-slider{
+	width: 1500px;
+	height: 190px;
+	
+}
+.slider-arrow_left{
+	left: 0;
+	background-image: url(images/red-left.png);
+}
+.slider-arrow_right{
+	right: 0;
+	background-image: url(images/red-right.png);
+}
+@media (max-width: 1620px){
+	.your-slider{
+		width: 1250px;
+	}
+}
+@media (max-width: 1370px){
+	.your-slider{
+		width: 1000px;
+	}
+}
+@media (max-width: 1120px){
+	.your-slider{
+		width: 750px;
+	}
+}
+@media (max-width: 870px){
+	.your-slider{
+		width: 500px;
+	}
+}
+@media (max-width: 620px){
+	.your-slider{
+		width: 250px;
+	}
+}
+.your-item{
+	width: 248px;
+	
+	background-color: #fff;
+	border: 1px solid #e3e7e6
+}
+.your-item-pic{
+	width: 248px;
+	height: 145px;
+}
+.your-item-title{
+	width: 100%;
+	height: 42px;
+
+	text-transform: uppercase;
+	text-align: center;
+	color: #d3232a;
+	line-height: 42px;
+
+	background-color: #f4f4f4;
+}
+
+.your-item:hover .your-item-pic{
+	opacity: .5;
+}
+.your-item:hover .your-item-title{
+	color: #f4f4f4;
+	background-color: #d3232a;
+}
