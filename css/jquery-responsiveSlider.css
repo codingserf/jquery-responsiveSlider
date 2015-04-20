@@ -4,7 +4,6 @@
 	overflow: hidden;
 }
 .responsiveSlider ul{
-	width: 0; /* I don't know why, but this rule can trigger animation */
 	-webkit-transition: all .25s ease-in-out;
 	-moz-transition: all .25s ease-in-out;
 	-ms-transition: all .25s ease-in-out;
@@ -32,6 +31,11 @@
 }
 /* /responsive slider */
 
+
+
+
+
+/* custom your style */
 .your-slider-wrap{
 	position: relative;
 	width: 100%;

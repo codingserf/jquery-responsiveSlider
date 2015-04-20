@@ -21,7 +21,7 @@
 			current_section_index = 0,
 			touchX = 0;
 
-		$slider_wrap.width(slider_width);
+		
 
 		$slider_btn_next.on('click',function(e){
 			moveSlider(+1);
@@ -53,9 +53,7 @@
 			moveSlider(-0);
 		}).trigger('resize');;
 
-		function initSlider(){
-			
-		}
+		$slider_wrap.width(slider_width);//thx Vingo~
 
 		function moveSlider(direction){ //+1 right or -1 left
 			var distance = $slider_mask.width(),
